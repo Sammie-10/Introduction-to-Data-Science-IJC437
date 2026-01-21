@@ -55,7 +55,7 @@ lines(density(sheff_daily$rain_day), col = 'red', lwd = 1) # adding the Kernel D
 # Spearman
 cor.test(sheff_hourly$rain_mm, sheff_hourly$pm25, method ="spearman", exact = FALSE)
 cor.test(sheff_daily$rain_day, sheff_daily$pm25_day, method ="spearman", exact = FALSE)
-cor.test(sheff_lag$rain_mm, sheff_daily$pm25_lag1, method ="spearman", exact = FALSE)
+cor.test(sheff_lag$rain_mm, sheff_lag$pm25_lag1, method ="spearman", exact = FALSE)
 
 ################
 ##GAM##
